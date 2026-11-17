@@ -3,7 +3,7 @@
 
 USE student_records_db;
 
-CREATE TABLE students (
+CREATE TABLE IF NOT EXISTS students ( (
     student_id INT AUTO_INCREMENT PRIMARY KEY,
     first_name VARCHAR(50) NOT NULL,
     last_name VARCHAR(50) NOT NULL,
