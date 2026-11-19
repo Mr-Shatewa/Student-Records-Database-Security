@@ -30,7 +30,7 @@ The project demonstrates database security through authentication, access contro
 
 ## Group
 Four members.
-
+Amos Kabashi _2420961
 ## Course
 BIT3360 – Advanced Databases.
 
