@@ -1,6 +1,7 @@
 
 -- File: create_users.sql
 -- Purpose: Creates database user accounts.
+-- Replace each placeholder with a unique strong password before running.
 
 -- Administrator account
 CREATE USER IF NOT EXISTS 'admin_user'@'localhost'
