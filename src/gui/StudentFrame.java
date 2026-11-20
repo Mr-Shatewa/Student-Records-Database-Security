@@ -27,7 +27,7 @@ public class StudentFrame extends JFrame {
     private int editingStudentId = -1;
 
     public StudentFrame(String userRole, boolean readOnly, DatabaseSession databaseSession) {
-        studentManager = new StudentManager(databaseSession);
+        studentManager = new StudentManager(databaseSession, userRole);
         boolean isAdmin = "Admin".equalsIgnoreCase(userRole);
         boolean canRegisterStudents = isAdmin || "Staff".equalsIgnoreCase(userRole);
         boolean canManageStudents = canRegisterStudents && !readOnly;

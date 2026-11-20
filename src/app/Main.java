@@ -1,7 +1,6 @@
 package app;
 
 import javax.swing.SwingUtilities;
-
 import gui.LoginFrame;
 
 public class Main {

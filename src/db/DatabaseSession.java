@@ -19,12 +19,12 @@ public final class DatabaseSession {
     }
 
     public synchronized Connection openConnection() throws SQLException {
-        if (cleared) {
-            throw new SQLException("The database session has ended.");
-        }
-
-        return DatabaseConnection.getConnection(username, new String(password));
+    if (cleared) {
+        throw new SQLException("The database session has ended.");
     }
+
+    return DatabaseConnection.getConnection(username, new String(password));
+}
 
     public synchronized void clear() {
         Arrays.fill(password, '\0');
