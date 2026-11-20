@@ -29,6 +29,12 @@ control access to student information.
 | UPDATE | Allowed | Denied | Denied |
 | DELETE | Allowed | Denied | Denied |
 
+The application controls mirror these permissions: Staff can register and view
+students; only the Administrator can edit or delete saved records; Viewers can
+only view records. The application authenticates using the database account,
+reads its active role with `CURRENT_ROLE()`, and uses that account for student
+queries so MySQL enforces the permission matrix.
+
 ## 4. Security Test Results
 
 ### Test 1: Administrator Access
